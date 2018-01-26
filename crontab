@@ -1,0 +1,1 @@
+0 */12 * * * root certbot certonly --agree-tos --domains $CERTBOT_DOMAIN --email $CERTBOT_EMAIL --post-hook "service nginx reload" --webroot --webroot-path /usr/share/nginx/html --test-cert --non-interactive
